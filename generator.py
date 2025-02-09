@@ -43,7 +43,7 @@ def main():
 
     with st.form("Playlist generation"):
         prompt = st.text_input("Describe the music you'd like to hear..")
-        song_count = st.slider("Songs", 1, 5, 10)
+        song_count = st.slider("Songs", 1, 5, 30)
         submitted = st.form_submit_button("Generate Playlist")
 
     if not submitted:
